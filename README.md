@@ -106,9 +106,9 @@ In order to use the playbooks, you will need to have an Ansible control node alr
 
 SSH into the control node and follow the steps below:
 
-- Run the download_all.sh script to download all the used playbooks automaticly.
+- Run the [download_all.sh](https://github.com/Alexsteele4121/ELK-Stack/blob/main/Scripts/download_all.sh) script to download all the used playbooks automaticly.
   - To download any of the above yaml files use the download_all.sh script as such:
-    - sudo chmod +x dowload_all.sh && sudo ./download_all.sh
+    - curl https://raw.githubusercontent.com/Alexsteele4121/ELK-Stack/main/Scripts/download_all.sh > download_all.sh && sudo chmod +x download_all.sh && sudo ./download_all.sh
 
 - Update the etc/ansible/hosts file to include the local IP and the group name as well as the python interpreter. To specify the machine you want to Install the playbook on you need to add the group name that you entered into the hosts file into the playbook YAML file (ex. "hosts: websevers or hosts: elk")
 
