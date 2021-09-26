@@ -112,6 +112,8 @@ SSH into the control node and follow the steps below:
  curl https://raw.githubusercontent.com/Alexsteele4121/ELK-Stack/main/Scripts/download_all.sh > download_all.sh && sudo chmod +x download_all.sh && sudo ./download_all.sh
 ```
 - Update the etc/ansible/hosts file to include the local IP and the group name as well as the python interpreter. To specify the machine you want to Install the playbook on you need to add the group name that you entered into the hosts file into the playbook YAML file (ex. "hosts: websevers or hosts: elk")
+- Run the Web playbook to install dvwa on all three of the web servers, navigate to http://[Your.VM.Public.IP]/dvwa/setup.php to ensure the servers are up and running.
+  - ansible-playbook [Web_playbook.yml](https://github.com/Alexsteele4121/ELK-Stack/blob/main/Scripts/Web_playbook.yml)
 
 - Run the elk playbook, and navigate to http://[Your.VM.Public.IP]:5601/app/kibana check that the installation worked as expected.
   - ansible-playbook [Elk_playbook.yml](https://github.com/Alexsteele4121/ELK-Stack/blob/main/Scripts/Elk_playbook.yml)
