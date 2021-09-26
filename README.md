@@ -12,12 +12,12 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - [Elk_playbook.yml](https://github.com/Alexsteele4121/ELK-Stack/blob/main/Scripts/Elk_playbook.yml)
 
 This document contains the following details:
-- [Description of the Topology](https://github.com/Alexsteele4121/ELK-Stack/edit/main/README.md#description-of-the-topology)
-- [Access Policies](https://github.com/Alexsteele4121/ELK-Stack/edit/main/README.md#access-policies)
-- [ELK Configuration](https://github.com/Alexsteele4121/ELK-Stack/edit/main/README.md#elk-configuration)
-  - [Beats in Use](https://github.com/Alexsteele4121/ELK-Stack/edit/main/README.md#target-machines--beats)
-  - [Machines Being Monitored](https://github.com/Alexsteele4121/ELK-Stack/edit/main/README.md#target-machines--beats)
-- [How to Use the Ansible Build](https://github.com/Alexsteele4121/ELK-Stack/edit/main/README.md#using-the-playbook)
+- Description of the Topology
+- Access Policies
+- ELK Configuration
+  - Beats in Use
+  - Machines Being Monitored
+- How to Use the Ansible Build
 
 ### Description of the Topology
 
